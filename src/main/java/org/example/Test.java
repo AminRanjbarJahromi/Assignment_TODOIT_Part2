@@ -4,7 +4,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Person amin = new Person();
+        /*Person amin = new Person();
         amin.setFirstName("Amin");
         amin.setLastName("Ranjbar");
         amin.getId();
@@ -15,6 +15,8 @@ public class Test {
         item1.setTitle("activity 1");
         item1.setCreator(amin);
         item1.setDeadLine();
+
+         */
         
 
 

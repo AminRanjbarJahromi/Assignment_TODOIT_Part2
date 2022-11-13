@@ -69,4 +69,6 @@ public class AppUser extends Person {
     public int hashCode() {
         return Objects.hash(username, role);
     }
+
+
 }
