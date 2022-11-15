@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Objects;
 
-public class AppUser extends Person {
+public class AppUser {
 
     //fields
 
@@ -14,9 +14,9 @@ public class AppUser extends Person {
 
 
     public AppUser(String username, String password, AppRole role) {
-        this.username = username;
-        this.password = password;
-        this.role = role;
+        setUsername(username);
+        setPassword(password);
+        setRole(role);
     }
 
     // methods

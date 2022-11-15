@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Person {
 
-    //field
+    //fields
     private int id;
     private String firstName;
     private String lastName;
@@ -13,15 +13,27 @@ public class Person {
     private AppUser credentials;
 
     //constructor
-    private int sequence = 10010;
+    private static int sequence = 10010;
 
-    public Person(int id, String firstName, String lastName, String email, AppUser credentials, int sequence) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.credentials = credentials;
-        this.sequence = sequence;
+    public Person(int id, String firstName, String lastName, String email, AppUser credentials) {
+        this.id = ++sequence;
+        setFirstName(firstName);
+        setLastName(lastName);
+        setEmail(email);
+        setCredentials(credentials);
+    }
+
+    public Person(String firstName, String lastName, String email, AppUser credentials) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setEmail(email);
+        setCredentials(credentials);
+    }
+
+    public Person(String firstName, String lastName,  AppUser credentials) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setCredentials(credentials);
     }
 
     //methode
@@ -67,6 +79,7 @@ public class Person {
     }
 
     public void setCredentials(AppUser credentials) {
+        if(credentials == null) throw new IllegalArgumentException(" credentials param was null");
         this.credentials = credentials;
     }
 
@@ -96,6 +109,6 @@ public class Person {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email);
+        return Objects.hash(id, firstName, lastName, email); // 1001
     }
 }

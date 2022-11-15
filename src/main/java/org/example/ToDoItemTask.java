@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class ToDoItemTask {
 
      //field
@@ -14,6 +16,13 @@ public class ToDoItemTask {
      private int sequence = 30030;
      public ToDoItemTask(int id) {
           this.id = ++sequence;
+     }
+
+     public ToDoItemTask(int id, boolean assigned, TodoItem todoItem, Person assignee) {
+          this.id = ++sequence;
+         setAssigned(assigned);
+          setTodoItem(todoItem);
+          setAssignee(assignee);
      }
 
      //getter and setter
@@ -47,12 +56,39 @@ public class ToDoItemTask {
      }
 
      public void setAssignee(Person assignee) {
-          if( assignee == null) throw new IllegalArgumentException(" assignee param was null ");
           this.assignee = assignee;
+          if( assignee != null){
+               this.assigned = true;
+          }else{
+               this.assigned = false;
+          }
      }
 
      public String getSummary(){
-          return assignee.getSummary();
+          return null;
      }
 
+     @Override
+     public String toString() {
+          return "ToDoItemTask{" +
+                  "id=" + id +
+                  ", assigned=" + assigned +
+                  ", todoItem=" + todoItem +
+                  ", assignee=" + assignee +
+                  '}';
+     }
+
+     @Override
+     public boolean equals(Object o) {
+          if (this == o) return true;
+          if (o == null || getClass() != o.getClass()) return false;
+          ToDoItemTask that = (ToDoItemTask) o;
+          return id == that.id && assigned == that.assigned && sequence == that.sequence
+                  && Objects.equals(todoItem, that.todoItem) && Objects.equals(assignee, that.assignee);
+     }
+
+     @Override
+     public int hashCode() {
+          return Objects.hash(id, assigned, todoItem, assignee, sequence);
+     }
 }

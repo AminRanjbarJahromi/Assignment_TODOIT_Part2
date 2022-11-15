@@ -21,6 +21,16 @@ public class TodoItem {
         this.deadLine = LocalDate.of(2022,12,29);
     }
 
+    //constructor
+
+    public TodoItem(String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
+        this.id = ++sequence;
+        setTitle(title);
+        setTaskDescription(taskDescription);
+        setDeadLine(deadLine);
+        setDone(done);
+        setCreator(creator);
+    }
 
 
     //methode
@@ -52,9 +62,9 @@ public class TodoItem {
         return deadLine;
     }
 
-    public void setDeadLine() {
-        if(deadLine == null) throw new IllegalArgumentException(" deadline param was null");
-        this.deadLine = deadLine;
+    public void setDeadLine(LocalDate deadLine) {
+        if(this.deadLine == null) throw new IllegalArgumentException(" deadline param was null");
+        this.deadLine = this.deadLine;
     }
 
     public boolean isDone() {
