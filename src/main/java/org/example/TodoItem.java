@@ -15,13 +15,7 @@ public class TodoItem {
 
     //constructor
 
-    private int sequence = 20020;
-    public TodoItem(){
-        this.id = ++sequence;
-        this.deadLine = LocalDate.of(2022,12,29);
-    }
-
-    //constructor
+    private static int sequence = 20020;
 
     public TodoItem(String title, String taskDescription, LocalDate deadLine, boolean done, Person creator) {
         this.id = ++sequence;

@@ -13,10 +13,7 @@ public class ToDoItemTask {
 
 
      //constructor
-     private int sequence = 30030;
-     public ToDoItemTask(int id) {
-          this.id = ++sequence;
-     }
+     private static int sequence = 30030;
 
      public ToDoItemTask(int id, boolean assigned, TodoItem todoItem, Person assignee) {
           this.id = ++sequence;

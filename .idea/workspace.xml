@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e929b11-681c-440f-88bc-e0e7f92e680e" name="Changes" comment="improve solution and end of part 2">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppUserTest.java" afterDir="false" />
+    <list default="true" id="8e929b11-681c-440f-88bc-e0e7f92e680e" name="Changes" comment="improve algorithms and fixed bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ToDoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ToDoItemTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TodoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/lexicon/projects/Assignments/Assignment_TODOIT_Part2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/lexicon/projects/Lecture Practice/week45_practic&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -105,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668360497764</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improve algorithms and fixed bugs">
+      <created>1668529303260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668529303260</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +124,7 @@
     <MESSAGE value="create AppUser class" />
     <MESSAGE value="upgrade Person class" />
     <MESSAGE value="improve solution and end of part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve solution and end of part 2" />
+    <MESSAGE value="improve algorithms and fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve algorithms and fixed bugs" />
   </component>
 </project>
