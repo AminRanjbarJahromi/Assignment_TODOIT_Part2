@@ -3,7 +3,7 @@ package org.example;
 public class Test {
 
     public static void main(String[] args) {
-        Person amin1 = new Person(1,"ff","t","tt",new AppUser("as","er",AppRole.ROLE_APP_USER));
+        Person amin1 = new Person(1,"ff","t","tt",new AppUser("asTTT","er",AppRole.ROLE_APP_USER));
         Person amin2 = new Person(1,"ff","t","tt",new AppUser("as","er",AppRole.ROLE_APP_USER));
         //System.out.println(amin1.equals(amin2)); // true
         System.out.println(amin1.hashCode());

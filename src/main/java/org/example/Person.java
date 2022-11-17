@@ -15,7 +15,7 @@ public class Person {
     //constructor
     private static int sequence = 10010;
 
-    public Person(int id, String firstName, String lastName, String email, AppUser credentials) {
+    public Person(String firstName, String lastName, String email, AppUser credentials) {
         this.id = ++sequence;
         setFirstName(firstName);
         setLastName(lastName);
@@ -23,14 +23,15 @@ public class Person {
         setCredentials(credentials);
     }
 
-    public Person(String firstName, String lastName, String email, AppUser credentials) {
-        setFirstName(firstName);
-        setLastName(lastName);
-        setEmail(email);
-        setCredentials(credentials);
+    public Person(int id, String firstName, String lastName, String email, AppUser credentials) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.credentials = credentials;
     }
 
-    public Person(String firstName, String lastName,  AppUser credentials) {
+    public Person(String firstName, String lastName, AppUser credentials) {
         setFirstName(firstName);
         setLastName(lastName);
         setCredentials(credentials);
@@ -104,11 +105,11 @@ public class Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return id == person.id && firstName.equals(person.firstName) && lastName.equals(person.lastName) && email.equals(person.email);
+        return id == person.id && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(email, person.email) && Objects.equals(credentials, person.credentials);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email); // 1001
+        return Objects.hash(id, firstName, lastName, email, credentials);
     }
 }
