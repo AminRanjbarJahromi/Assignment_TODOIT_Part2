@@ -1,11 +1,11 @@
-package org.example;
+package org.example.model;
 
 import java.util.Objects;
 
 public class Person {
 
     //fields
-    private int id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private String email;
@@ -13,10 +13,7 @@ public class Person {
     private AppUser credentials;
 
     //constructor
-    private static int sequence = 10010;
-
     public Person(String firstName, String lastName, String email, AppUser credentials) {
-        this.id = ++sequence;
         setFirstName(firstName);
         setLastName(lastName);
         setEmail(email);

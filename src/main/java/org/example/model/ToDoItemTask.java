@@ -1,11 +1,11 @@
-package org.example;
+package org.example.model;
 
 import java.util.Objects;
 
 public class ToDoItemTask {
 
      //field
-     private int id;
+     private Integer id;
      private boolean assigned;
      private TodoItem todoItem;
      private Person assignee;
@@ -13,10 +13,9 @@ public class ToDoItemTask {
 
 
      //constructor
-     private static int sequence = 30030;
 
      public ToDoItemTask(int id, boolean assigned, TodoItem todoItem, Person assignee) {
-          this.id = ++sequence;
+          this.id = id;
          setAssigned(assigned);
           setTodoItem(todoItem);
           setAssignee(assignee);
@@ -80,12 +79,12 @@ public class ToDoItemTask {
           if (this == o) return true;
           if (o == null || getClass() != o.getClass()) return false;
           ToDoItemTask that = (ToDoItemTask) o;
-          return id == that.id && assigned == that.assigned && sequence == that.sequence
+          return id == that.id && assigned == that.assigned
                   && Objects.equals(todoItem, that.todoItem) && Objects.equals(assignee, that.assignee);
      }
 
      @Override
      public int hashCode() {
-          return Objects.hash(id, assigned, todoItem, assignee, sequence);
+          return Objects.hash(id, assigned, todoItem, assignee);
      }
 }

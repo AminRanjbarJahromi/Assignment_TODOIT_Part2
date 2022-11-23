@@ -1,14 +1,17 @@
-package org.example;
+package org.example.model;
 
 import java.util.Objects;
+import java.util.Set;
 
 public class AppUser {
 
     //fields
 
-    private String username;
+    private static String username;
     private String password;
     private AppRole role;
+
+    private Set<AppRole> roles;
 
     //constructor
 
@@ -22,7 +25,7 @@ public class AppUser {
     // methods
 
 
-    public String getUsername() {
+    public static String getUsername() {
         return username;
     }
 
